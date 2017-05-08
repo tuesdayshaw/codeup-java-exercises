@@ -25,33 +25,72 @@ public class consoleExercises {
 //        String sentence = sc.nextLine();
 //        System.out.println(sentence);
 
-        System.out.println("What is the width of the classroom?");
+//        System.out.println("What is the width of the classroom?");
+//
+//        String values1 = sc.nextLine();
+//        System.out.println(values1);
+//
+//        int width = Integer.parseInt(values1);
+//        System.out.println(width);
+//
+//        System.out.println("What is the length of the classroom?");
+//
+//        String values2 = sc.nextLine();
+//        System.out.println(values2);
+//
+//        int length = Integer.parseInt(values2);
+//        System.out.println(length);
+//
+//        System.out.println("What is the height of the classroom?");
+//
+//        String values3 = sc.nextLine();
+//        System.out.println(values3);
+//
+//        int height = Integer.parseInt(values3);
+//        System.out.println(height);
 
-        String values1 = sc.nextLine();
-        System.out.println(values1);
+//        Float length;
+//        Float width;
+//        Float height;
+//
+//        System.out.println("What is the width of the classroom?");
+//        width = sc.nextFloat();
+//
+//        System.out.println("What is the length of the classroom?");
+//        length = sc.nextFloat();
+//
+//        System.out.println("What is the height of the classroom?");
+//        height = sc.nextFloat();
+//
+//
+//        System.out.println("Area = " + (length * width));
+//        System.out.println("Perimeter = " + ((2 * length) + (2 * width)));
+//        System.out.println("Volume = " + (length * width * height));
 
-        int width = Integer.parseInt(values1);
-        System.out.println(width);
 
-        System.out.println("What is the length of the classroom?");
+        //Bonus: create a Pizza Order CLI app:
 
-        String values2 = sc.nextLine();
-        System.out.println(values2);
+        System.out.println("Hello, what size pizza would you like to order today? Enter small, medium, or large.");
+        String size = sc.nextLine();
 
-        int length = Integer.parseInt(values2);
-        System.out.println(length);
+        System.out.println("We have cheese, pepperoni, sausage, margarita, and hawaiian. Please enter one.");
+        String type = sc.nextLine();
 
-        System.out.println("What is the height of the classroom?");
+        System.out.println("You can add extras for $1.50. They are: cheese, onion, jalapeno, spinach, pepperoni, sausage, marinara, peppers, garlic, and tomato. Please enter any extras.");
+        String extras = sc.nextLine();
 
-        String values3 = sc.nextLine();
-        System.out.println(values3);
 
-        int height = Integer.parseInt(values3);
-        System.out.println(height);
+        System.out.println("Please enter your name:");
+        String name = sc.nextLine();
 
-        System.out.println("Area = " + (length * width));
-        System.out.println("Perimeter = " + ((2 * length) + (2 * width)));
-        System.out.println("Volume = " + (length * width * height));
+        System.out.println("Please enter your address:");
+        String address = sc.nextLine();
+
+        System.out.println("Please enter your phone:");
+        String phone = sc.nextLine();
+
+        System.out.println("Order for: " + name);
+
     }
 
 }
