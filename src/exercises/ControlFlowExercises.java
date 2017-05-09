@@ -8,6 +8,8 @@ import java.math.BigInteger;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
+//        Part One:
+
 //        Integer i = 5;
 
 //        while (i <= 15){
@@ -59,6 +61,25 @@ public class ControlFlowExercises {
 //        for(long i = 2; i < 1000000; i = i*i){
 //            System.out.println(i);
 //        }
+
+
+
+//        Part Two:
+
+        for(int i=0; i<100; i++){
+            if (i % 3 == 0 & i % 5 == 0){
+                System.out.println("FizzBuzz");
+            } else if (i % 5 == 0){
+                System.out.println("Buzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else {
+                System.out.println(i);
+            }
+        }
+
+
+
     }
 
 }
