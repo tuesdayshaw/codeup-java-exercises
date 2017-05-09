@@ -70,11 +70,25 @@ public class consoleExercises {
 
         //Bonus: create a Pizza Order CLI app:
 
-        System.out.println("Hello, what size pizza would you like to order today? Enter small, medium, or large.");
-        String size = sc.nextLine();
-        Double small = 8.00;
-        Double medium = 10.00;
-        Double large = 12.00;
+        Double total = 0.00;
+        Double i = 0.00;
+        String size = "";
+
+        System.out.println("Hello, what size pizza would you like to order today? Enter small, medium or large?");
+        switch (sc.nextLine()){
+            case "small":
+                total += 10.00;
+                size += "Small";
+                break;
+            case "medium":
+                total += 12.00;
+                size += "Medium";
+                break;
+            case "large":
+                total += 14.00;
+                size += "Large";
+                break;
+        }
 
         System.out.println("We have cheese, pepperoni, sausage, margarita, and hawaiian. Please enter one.");
         String type = sc.nextLine();
@@ -82,7 +96,9 @@ public class consoleExercises {
 
         System.out.println("You can add extras for $1.50. They are: cheese, onion, jalapeno, spinach, pepperoni, sausage, marinara, peppers, garlic, and tomato. Please enter any extras.");
         String extras = sc.nextLine();
-        Double extra = 1.50;
+        i++;
+        Double extraCost = (i * 1.50);
+        total += (extraCost);
 
 
         System.out.println("Please enter your name:");
@@ -97,8 +113,8 @@ public class consoleExercises {
         System.out.println("Order for: " + name);
         System.out.println("Deliver to: " + address);
         System.out.println("Phone: " + phone);
-        System.out.println("Your Order: " + size + " " + type + " " + extras);
-        System.out.println("Your total is: ");
+        System.out.println("Your Order: " + size + " " + type + " with extra: " + extras);
+        System.out.println("Your total is: " + total);
 
     }
 
