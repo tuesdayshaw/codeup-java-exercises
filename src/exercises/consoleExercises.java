@@ -72,12 +72,17 @@ public class consoleExercises {
 
         System.out.println("Hello, what size pizza would you like to order today? Enter small, medium, or large.");
         String size = sc.nextLine();
+        Double small = 8.00;
+        Double medium = 10.00;
+        Double large = 12.00;
 
         System.out.println("We have cheese, pepperoni, sausage, margarita, and hawaiian. Please enter one.");
         String type = sc.nextLine();
 
+
         System.out.println("You can add extras for $1.50. They are: cheese, onion, jalapeno, spinach, pepperoni, sausage, marinara, peppers, garlic, and tomato. Please enter any extras.");
         String extras = sc.nextLine();
+        Double extra = 1.50;
 
 
         System.out.println("Please enter your name:");
@@ -90,6 +95,10 @@ public class consoleExercises {
         String phone = sc.nextLine();
 
         System.out.println("Order for: " + name);
+        System.out.println("Deliver to: " + address);
+        System.out.println("Phone: " + phone);
+        System.out.println("Your Order: " + size + " " + type + " " + extras);
+        System.out.println("Your total is: ");
 
     }
 
