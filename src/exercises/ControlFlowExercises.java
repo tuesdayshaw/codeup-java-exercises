@@ -197,6 +197,23 @@ public class ControlFlowExercises {
 //
 //        }
 
+
+//        Bonus Three:
+//
+//        Write a Java command line application to represent/solve the following problem
+//
+//        A Zoologist wants to determine the percentage of animals in the following
+//        three age categories:
+//
+//                * 0 to 1 year,
+//                * over 1 year and less than 3
+//                * 3 or more years.
+//
+//                The zoologist is not yet sure about which animal to study. If she decide
+//        on elephants, you will only take a sample of 20 of them; If she decides
+//        on giraffes, only take 15 samples, otherwise chimpanzees will be
+//        studied, and the sample size will be 40.
+
     }
 
 }

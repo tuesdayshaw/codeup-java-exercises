@@ -38,22 +38,24 @@ public class stringExercise {
 //        He answers 'Whatever.' to anything else.
 
 
-        String message1 = "Do you like pizza?";
-        String message2 = "GO CLEAN YOUR ROOM!";
-        String message3 = "     ";
+//        String message1 = "Do you like pizza?";
+//        String message2 = "GO CLEAN YOUR ROOM!";
+//        String message3 = "     ";
+//        String message4 = "Good Morning";
 
-        if (message1.endsWith("?")){
+        Scanner input = new Scanner(System.in);
+        String message = input.nextLine();
+
+
+        if (message.endsWith("?")){
             System.out.println("Sure.");
-        }
-
-        if (message2.toUpperCase().equals(message2)){
-            System.out.println("Whoa, chill out!");
-        }
-
-        if (message3.trim().equals("")){
+        }else if (message.trim().equals(" ")) {
             System.out.println("Fine, be that way!");
+        } else if (message.toUpperCase().equals(message)){
+            System.out.println("Whoa, chill out!");
+        } else {
+            System.out.println("Whatever");
         }
-
 
 
     }
