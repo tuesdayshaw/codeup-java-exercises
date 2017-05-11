@@ -20,8 +20,15 @@ public class methodsExercises {
     }
 
     public static int multiplication(int number1, int number2){
-        int timesNumbers = number1 * number2;
+//        int timesNumbers = number1 * number2;
+        int timesNumbers = 0;
+        int i;
+        for(i = 0; i < number2; i++){
+            timesNumbers = timesNumbers + number1;
+
+        }
         return timesNumbers;
+
     }
 
     public static int division(int number1, int number2){
@@ -29,11 +36,20 @@ public class methodsExercises {
         return divideNumbers;
     }
 
+    public static int modulus(int number1, int number2) {
+        int modulusNumbers = number1 % number2;
+        if (number1 == 0) {
+            System.out.println("Modulus with 0 is not allowed");
+        }
+            return modulusNumbers;
+    }
+
     public static void main(String[] args) {
-        System.out.println(addition(10,30));
-        System.out.println(subtraction(44, 67));
-        System.out.println(multiplication(8, 90));
-        System.out.println(division(20,5));
+//        System.out.println(addition(10,30));
+//        System.out.println(subtraction(44, 67));
+        System.out.println(multiplication(4, 5));
+//        System.out.println(division(20,5));
+//        System.out.println(modulus(10,9));
     }
 
 
