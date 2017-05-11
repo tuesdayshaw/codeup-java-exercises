@@ -54,7 +54,7 @@ public class stringExercise {
         else if (message.trim().equals("")) {
             System.out.println("Fine, be that way!");
         }
-        else if (message.endsWith("!") || message.toUpperCase().equals(message)){
+        else if (message.endsWith("!") || (message.toUpperCase().equals(message) && !message.toLowerCase().equals(message))){
             System.out.println("Whoa, chill out!");
         }
         else {
