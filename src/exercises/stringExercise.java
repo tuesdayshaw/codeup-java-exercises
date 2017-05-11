@@ -44,16 +44,20 @@ public class stringExercise {
 //        String message4 = "Good Morning";
 
         Scanner input = new Scanner(System.in);
+        System.out.println("Talk to Bob:");
         String message = input.nextLine();
 
 
         if (message.endsWith("?")){
             System.out.println("Sure.");
-        }else if (message.trim().equals(" ")) {
+        }
+        else if (message.trim().equals("")) {
             System.out.println("Fine, be that way!");
-        } else if (message.toUpperCase().equals(message)){
+        }
+        else if (message.endsWith("!") || message.toUpperCase().equals(message)){
             System.out.println("Whoa, chill out!");
-        } else {
+        }
+        else {
             System.out.println("Whatever");
         }
 
