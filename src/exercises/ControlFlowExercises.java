@@ -82,28 +82,35 @@ public class ControlFlowExercises {
 
 //        Part Three:
 
-        Scanner input = new Scanner(System.in);
-        String yesNo = "Y";
-        int i = 1;
+//        Scanner input = new Scanner(System.in);
+//        String yesNo = "Y";
+//        int i = 1;
+//
+//        System.out.println("Please enter an integer");
+//        int enteredNumber = input.nextInt();
+//
+//        input.nextLine(); //removes previous entry to make room for next input
+//        System.out.println("Do you want to continue?");
+//        yesNo = input.nextLine();
+//
+//        if (yesNo.equalsIgnoreCase("Y")) {
+//            System.out.println("Here is your table: ");
+//            System.out.println(" number | squared | cube ");
+//            System.out.println(" ------ | ------- | ---- ");
+//            do {
+////                Started to convert to string to format in table, but found other solution
+////                String a = String.valueOf(i++);
+////                String b = String.valueOf(i*i);
+////                String c = String.valueOf(i*i*i);
+//
+//                System.out.printf("|%-7d", i++);
+//                System.out.printf("|%-9d", (int)Math.pow(i, 2));
+//                System.out.printf("|%-7d\n", (int)Math.pow(i, 3));
+//
+//
+//            } while (i <= enteredNumber);
+//        }
 
-        System.out.println("Please enter an integer");
-        int enteredNumber = input.nextInt();
-
-        input.nextLine(); //removes previous entry to make room for next input
-        System.out.println("Do you want to continue?");
-        yesNo = input.nextLine();
-
-        if (yesNo.equalsIgnoreCase("Y")) {
-            System.out.println("Here is your table: ");
-            System.out.println(" number | squared | cube ");
-            System.out.println(" ------ | ------- | ---- ");
-            do {
-                String a = String.valueOf(i++);
-                String b = String.valueOf(i*i);
-                String c = String.valueOf(i*i*i);
-                System.out.printf("%c.length() - a.length()s", a, b, c);
-            } while (i < enteredNumber);
-        }
 
 //        Part Four:
 
@@ -155,9 +162,9 @@ public class ControlFlowExercises {
 //        Convert a number to a string, the contents of which depend on the number's factors.
 //
 //        If the number has 3 as a factor, output 'Pling'.
-//                If the number has 5 as a factor, output 'Plang'.
-//                If the number has 7 as a factor, output 'Plong'.
-//                If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
+//        If the number has 5 as a factor, output 'Plang'.
+//        If the number has 7 as a factor, output 'Plong'.
+//        If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
 //
 //        Examples
 //
@@ -174,13 +181,22 @@ public class ControlFlowExercises {
 
 
 
+
 //        Bonus Two:
 //
 //        Suppose you have a set of grades (a number between 0 and 100) of a group
 //        of 10 students. Write a program to calculate the average score and the
 //        lowest score for the entire group.
 //
-//                What loop would be better? while, do-while or a for?
+//        What loop would be better? while, do-while or a for?
+
+//        int studentsTotal = 10;
+//        int count;
+//
+//        for (count = 0; count <= studentsTotal; count++){
+//
+//        }
+
     }
 
 }
