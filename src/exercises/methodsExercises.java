@@ -84,9 +84,9 @@ public class methodsExercises {
 //   }
 
 //Rolling Dice:
-    public static int dice(int number){
-        return (int) Math.floor(Math.random() * number) + 1;
-    }
+//    public static int dice(int number){
+//        return (int) Math.floor(Math.random() * number) + 1;
+//    }
 
 
     public static void main(String[] args) {
@@ -119,21 +119,28 @@ public class methodsExercises {
 
 
 //        Dice:
-        Scanner input = new Scanner(System.in);
-
-        String yesNo = "Y";
-        System.out.println("Do you want to roll the dice?");
-        yesNo = input.nextLine();
-        int i = 1;
-
-        if (yesNo.equalsIgnoreCase("Y")) {
-            System.out.print("Enter a number between 1 and 12: ");
-            int UI = input.nextInt();
-
-            do{
-                System.out.println(dice(UI));
-                i++;
-            } while (i <= 2);
-        }
+//        Scanner input = new Scanner(System.in);
+//
+//        String yesNo = "Y";
+//        System.out.println("Do you want to roll the dice?");
+//        yesNo = input.nextLine();
+//        int i = 1;
+//
+//        while (yesNo.equalsIgnoreCase("Y")) {
+//            System.out.print("Enter a number between 1 and 12: ");
+//            int UI = input.nextInt();
+//
+//            do{
+//                System.out.println(dice(UI));
+//                i++;
+//            } while (i <= 2);
+//
+//            System.out.println("Do you want to roll again?");
+//            input.nextLine();
+//            yesNo = input.nextLine();
+//            i = 1;
+//
+//            //last
+//        }
     }
 }
