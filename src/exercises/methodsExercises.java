@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class methodsExercises {
 
-
+//Basic Arithmetic:
 
 //    public static int addition(int number1, int number2){
 //        int addNumbers = number1 + number2;
@@ -59,20 +59,33 @@ public class methodsExercises {
 //        }
 //    }
 
+//Number Verification:
 
+//    public static int getInteger(int min, int max){
+//
+//        System.out.print("Enter a number between 1 and 10: ");
+//        Scanner input = new Scanner(System.in);
+//        int UI = input.nextInt();
+//
+//        if (UI < min || UI > max){
+//            return getInteger(1, 10);
+//        } else {
+//            return UI;
+//        }
+//    }
 
-    public static int getInteger(int min, int max){
+//Factorial:
+//   public static int factorial(int number){
+//
+//        if (number == 0 || number == 1){
+//            return 1;
+//        } else return number * factorial(number - 1);
+//
+//   }
 
-        System.out.print("Enter a number between 1 and 10: ");
-        Scanner input = new Scanner(System.in);
-        int UI = input.nextInt();
-
-        if (UI < min || UI > max){
-            return getInteger(1, 10);
-        } else {
-            return UI;
-        }
-
+//Rolling Dice:
+    public static int dice(int number){
+        return (int) Math.floor(Math.random() * number) + 1;
     }
 
 
@@ -83,12 +96,44 @@ public class methodsExercises {
 //        System.out.println(division(20,5));
 //        System.out.println(modulus(10,9));
 //        System.out.println(multiply(4,5));
+//        getInteger(1, 10);
 
 
-        getInteger(1, 10);
+//        Factorial:
+//        System.out.print("Enter a number between 1 and 10: ");
+//        Scanner input = new Scanner(System.in);
+//        int UI = input.nextInt();
+//        int min = 0;
+//        int max = 10;
+//
+//        String yesNo = "Y";
+//        System.out.println("Do you want to continue?");
+//        yesNo = input.nextLine();
+//        input.nextLine();
+//
+//        do {
+//            if (UI > min && UI < max) {
+//                System.out.println(factorial(UI));
+//            }
+//        } while (yesNo.equalsIgnoreCase("Y"));
 
 
+//        Dice:
+        Scanner input = new Scanner(System.in);
 
+        String yesNo = "Y";
+        System.out.println("Do you want to roll the dice?");
+        yesNo = input.nextLine();
+        int i = 1;
+
+        if (yesNo.equalsIgnoreCase("Y")) {
+            System.out.print("Enter a number between 1 and 12: ");
+            int UI = input.nextInt();
+
+            do{
+                System.out.println(dice(UI));
+                i++;
+            } while (i <= 2);
+        }
     }
-
 }
