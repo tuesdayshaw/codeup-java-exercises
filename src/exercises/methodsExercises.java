@@ -88,6 +88,30 @@ public class methodsExercises {
 //        return (int) Math.floor(Math.random() * number) + 1;
 //    }
 
+//    High/Low Guessing Game:
+    public static int guessingGame(int number){
+        System.out.println("Try to guess the correct number between 1 and 100");
+        Scanner input = new Scanner(System.in);
+        int UI = input.nextInt();
+        int i = 1;
+
+        while (UI != number && i < 10 ) {
+            if (UI < number) {
+                System.out.println("Guess Higher");
+            } else if (UI > number){
+                System.out.println("Guess Lower");
+            }
+            i++;
+            UI = input.nextInt();
+        }
+        if (i == 10){
+            System.out.println("Ran out of turns");
+        }
+        if (UI == number){
+            System.out.println("CORRECT!");
+        }
+        return UI;
+    }
 
     public static void main(String[] args) {
 //        System.out.println(addition(10,30));
@@ -142,5 +166,13 @@ public class methodsExercises {
 //
 //            //last
 //        }
+
+//        High/Low:
+       guessingGame((int)Math.floor(Math.random() * 50)+ 50);
+
+
+
+
+
     }
 }
