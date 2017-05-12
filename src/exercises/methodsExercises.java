@@ -66,13 +66,12 @@ public class methodsExercises {
         System.out.print("Enter a number between 1 and 10: ");
         Scanner input = new Scanner(System.in);
         int UI = input.nextInt();
-        int userInput = getInteger(1, 10);
 
-        if (min == 0 || max > 10){
-            return userInput;
-        } else if (min >= 1 && max <=10) {
+        if (UI < min || UI > max){
+            return getInteger(1, 10);
+        } else {
             return UI;
-        } else return
+        }
 
     }
 
