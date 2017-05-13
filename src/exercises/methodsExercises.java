@@ -90,7 +90,7 @@ public class methodsExercises {
 
 //    High/Low Guessing Game:
     public static int guessingGame(int number){
-        System.out.println("Try to guess the correct number between 1 and 100");
+        System.out.println("Try to guess the correct number between 1 and 100.\nYou get 10 guesses.");
         Scanner input = new Scanner(System.in);
         int UI = input.nextInt();
         int i = 1;
@@ -101,6 +101,7 @@ public class methodsExercises {
             } else if (UI > number){
                 System.out.println("Guess Lower");
             }
+            System.out.println("Guess #: " + i);
             i++;
             UI = input.nextInt();
         }
@@ -109,6 +110,7 @@ public class methodsExercises {
         }
         if (UI == number){
             System.out.println("CORRECT!");
+            System.out.println("Guess #: " + i);
         }
         return UI;
     }
