@@ -29,7 +29,7 @@ public class Input {
     public int getInt(int min, int max) {
         int answer = this.getInt();
         if (answer < min || answer > max){
-            System.out.println("Number out of range");
+            System.out.println("Number out of range, try again");
             getInt(min, max);
             input.nextInt();
             return answer;
@@ -45,7 +45,7 @@ public class Input {
     public double getDouble(double min, double max){
         double answer = this.getDouble();
         if (answer < min || answer > max){
-            System.out.println("Number out of range");
+            System.out.println("Number out of range, try again");
             getDouble(min, max);
             input.nextDouble();
             return answer;

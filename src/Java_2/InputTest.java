@@ -21,14 +21,20 @@ public class InputTest {
         System.out.println("Enter a number");
         System.out.println(input.getInt());
 
-        System.out.println("Enter a number between 1 and 50");
-        System.out.println(input.getInt(1, 50));
+        int min = 1;
+        int max = 50;
+
+        System.out.println("Enter a number between "+ min + " and " + max);
+        System.out.println("The number in the range was: " + input.getInt(min, max));
 
         System.out.println("Enter a number with decimal places");
         System.out.println(input.getDouble());
 
-        System.out.println("Enter a number between 1.50 and 7.50");
-        System.out.println(input.getDouble(1.50, 7.50));
+        double minDbl = 1.50;
+        double maxDbl = 7.50;
+
+        System.out.println("Enter a number between " + minDbl + " and " + max);
+        System.out.println(input.getDouble(minDbl, max));
 
     }
 
