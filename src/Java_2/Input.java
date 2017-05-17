@@ -14,6 +14,10 @@ public class Input {
         this.input = new Scanner(System.in);
     }
 
+    public Input(){
+        this.input = new Scanner(System.in);
+    }
+
     public String getString(){
         return input.nextLine();
     }
