@@ -1,7 +1,4 @@
-package exercises;
-
-import java.math.BigInteger;
-import java.util.Scanner;
+package Java_1;
 
 /**
  * Created by canidmars on 5/9/17.
