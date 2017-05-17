@@ -27,15 +27,15 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
-        int userInput = input.nextInt();
-        if (userInput < min || userInput > max){
+        int answer = this.getInt();
+        if (answer < min || answer > max){
             System.out.println("Try again");
             getInt(min, max);
             input.nextInt();
-            return userInput;
+            return answer;
         }
         System.out.println("Correct");
-        return userInput;
+        return answer;
     }
 
     public int getInt(){
@@ -43,15 +43,15 @@ public class Input {
     }
 
     public double getDouble(double min, double max){
-        double userInput = input.nextDouble();
-        if (userInput < min || userInput > max){
+        double answer = this.getDouble();
+        if (answer < min || answer > max){
             System.out.println("Try again");
             getDouble(min, max);
             input.nextDouble();
-            return userInput;
+            return answer;
         }
         System.out.println("Correct");
-        return userInput;
+        return answer;
     }
 
     public double getDouble(){
