@@ -11,7 +11,6 @@ public class MoviesApplication {
 
 
         Input input = new Input(new Scanner(System.in));
-        int selection = 0;
 
         System.out.println("Would you like to see the movies?");
         String confirm = input.getString();
