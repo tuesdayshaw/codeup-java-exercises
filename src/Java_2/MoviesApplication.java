@@ -35,36 +35,29 @@ public class MoviesApplication {
                     }
                     break;
                 case 2:
-                    for (Movie movieCategoryAnimated : MoviesArray.findAll()) {
-                        if (movieCategoryAnimated.getCategory().equalsIgnoreCase("animated")) {
-                            System.out.println(movieCategoryAnimated.getName());
-                        }
-                    }
+                    printByCategory(MoviesArray.findAll(), "animated");
                     break;
                 case 3:
-                    for (Movie movieCategoryDrama : MoviesArray.findAll()) {
-                        if (movieCategoryDrama.getCategory().equalsIgnoreCase("drama")) {
-                            System.out.println(movieCategoryDrama.getName());
-                        }
-                    }
+                    printByCategory(MoviesArray.findAll(), "drama");
                     break;
                 case 4:
-                    for (Movie movieCategoryHorror : MoviesArray.findAll()) {
-                        if (movieCategoryHorror.getCategory().equalsIgnoreCase("horror")) {
-                            System.out.println(movieCategoryHorror.getName());
-                        }
-                    }
+                    printByCategory(MoviesArray.findAll(), "horror");
                     break;
                 case 5:
-                    for (Movie movieCategoryScifi : MoviesArray.findAll()) {
-                        if (movieCategoryScifi.getCategory().equalsIgnoreCase("scifi")) {
-                            System.out.println(movieCategoryScifi.getName());
-                        }
-                    }
+                    printByCategory(MoviesArray.findAll(), "scifi");
                     break;
                 default:
                     System.out.println("Not a valid option");
                     break;
+            }
+        }
+    }
+
+
+    public static void printByCategory(Movie[] movies, String category){
+        for (Movie m : MoviesArray.findAll()) {
+            if (m.getCategory().equalsIgnoreCase(category)) {
+                System.out.println(m.getName());
             }
         }
     }
