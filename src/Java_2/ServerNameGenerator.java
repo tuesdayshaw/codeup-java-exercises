@@ -16,7 +16,7 @@ public class ServerNameGenerator {
     public static String generateName(String[] adjectives, String[] nouns){
         String randomAdjective = adjectives[(int) (Math.random() * adjectives.length)];
         String randomNoun = nouns[(int) (Math.random() * nouns.length)];
-        return randomNoun + "-" + randomAdjective;
+        return randomAdjective + "-" + randomNoun;
     }
 
 }
