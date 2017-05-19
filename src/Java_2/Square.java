@@ -5,23 +5,20 @@ package Java_2;
  * Created by canidmars on 5/19/17.
  */
 
-public class Square extends Rectangle {
+public class Square extends Quadralateral implements Measurable{
 
-    private double side;
 
-    public Square (double side){
+    public Square(int side) {
         super(side, side);
-        this.side = side;
     }
 
-    public double getArea(){
-        return side * side;
-        //or
-//        return super.getArea();
+    @Override
+    public double getPerimeter() {
+        return (2 * length) + (2 * width);
     }
 
-    public double getPerimeter(){
-        return 4 * side;
-//        return super.getPerimeter();
+    @Override
+    public double getArea() {
+        return length * width;
     }
 }

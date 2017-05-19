@@ -7,16 +7,15 @@ public class ShapesTest {
 
     public static void main(String[] args) {
 
-        Rectangle box1 = new Rectangle(4, 5);
+        Measurable myShape = new Rectangle(10, 20);
 
-        System.out.println(box1.getArea());
-        System.out.println(box1.getPerimeter());
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
 
-        Rectangle box2 = new Square(5);
+        Measurable myShapeTwo = new Square(10);
 
-        System.out.println(box2.getArea());
-        System.out.println(box2.getPerimeter());
-
+        System.out.println(myShapeTwo.getArea());
+        System.out.println(myShapeTwo.getPerimeter());
 
     }
 }
