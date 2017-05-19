@@ -11,6 +11,7 @@ public class MoviesApplication {
     public static void main(String[] args) {
 
         Input input = new Input(new Scanner(System.in));
+        Movie[] listOfMovies = MoviesArray.findAll();
 
         System.out.println("Would you like to see the movies?");
         String confirm = input.getString();
@@ -35,32 +36,25 @@ public class MoviesApplication {
                     System.exit(0);
                     break;
                 case 1:
-                    for (Movie movieListAllTitles : ) {
+                    for (Movie movieListAllTitles : listOfMovies) {
                         System.out.println(movieListAllTitles.getName());
                     }
                     break;
                 case 2:
-                    printByCategory(MoviesArray.findAll(), "animated");
+                    printByCategory(listOfMovies, "animated");
                     break;
                 case 3:
-                    printByCategory(MoviesArray.findAll(), "drama");
+                    printByCategory(listOfMovies, "drama");
                     break;
                 case 4:
-                    printByCategory(MoviesArray.findAll(), "horror");
+                    printByCategory(listOfMovies, "horror");
                     break;
                 case 5:
-                    printByCategory(MoviesArray.findAll(), "scifi");
+                    printByCategory(listOfMovies, "scifi");
                     break;
                 case 6:
-                    System.out.println("Enter the name of the movie:");
-                    String name = input.getString();
-
-                    System.out.println("Enter the name of the category:");
-                    String category = input.getString();
-
-                    Movie newMovie = new Movie(name, category);
-
-                    MoviesArray = Arrays.copyOf(MoviesArray.findAll(), MoviesArray.findAll()+1);
+                    listOfMovies = addMovie(input, listOfMovies);
+                    break;
                 default:
                     System.out.println("Not a valid option");
                     break;
@@ -77,7 +71,20 @@ public class MoviesApplication {
         }
     }
 
-    public static void addMovie(){
+
+    public static Movie[] addMovie(Input input, Movie[] listOfMovies){
+
+        System.out.println("Enter the name of the movie:");
+        String name = input.getString();
+
+        System.out.println("Enter the name of the category:");
+        String category = input.getString();
+
+        Movie newMovie = new Movie(name, category);
+
+        listOfMovies = Arrays.copyOf(listOfMovies, listOfMovies.length + 1);
+        listOfMovies[listOfMovies.length - 1] = newMovie;
+        return listOfMovies;
 
     }
 }
