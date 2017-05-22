@@ -29,7 +29,7 @@ public class MoviesApplication {
             System.out.println("Enter your choice: ");
 
             int selection = input.getInt();
-            input.getInt();
+//            input.getInt();
 
             switch (selection) {
                 case 0:
@@ -76,7 +76,7 @@ public class MoviesApplication {
 
         System.out.println("Enter the name of the movie:");
         String name = input.getString();
-
+        input.getString();
         System.out.println("Enter the name of the category:");
         String category = input.getString();
 
