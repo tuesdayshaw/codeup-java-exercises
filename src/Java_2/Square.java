@@ -21,4 +21,14 @@ public class Square extends Quadralateral implements Measurable{
     public double getArea() {
         return length * width;
     }
+
+    @Override
+    void setWidth() {
+
+    }
+
+    @Override
+    void setLength() {
+
+    }
 }
