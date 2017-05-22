@@ -12,14 +12,9 @@ public class Student {
     private ArrayList<Integer> grades = new ArrayList<Integer>();
     private int sum = 0;
 
-    public Student (String name, ArrayList<Integer> grades){
-        this.name = name;
-        this.grades = grades;
-    }
 
     public Student (String name){
         this.name = name;
-        this.grades = grades;
     }
 
     public void setName(String name){
@@ -33,6 +28,10 @@ public class Student {
     public void addGrade(int grade){
         this.grades.add(grade);
     }
+
+//    public double getGrade(){
+//
+//    }
 
     public double getGradeAverage(){
         for(double element : grades){
