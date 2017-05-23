@@ -29,9 +29,9 @@ public class Student {
         this.grades.add(grade);
     }
 
-//    public double getGrade(){
-//
-//    }
+    public ArrayList<Integer> getGrade(){
+        return this.grades;
+    }
 
     public double getGradeAverage(){
         for(double element : grades){
@@ -41,7 +41,6 @@ public class Student {
         return sum;
     }
 
-
     public static void main(String[] args) {
 
         Student student1 = new Student("Tuesday");
@@ -50,6 +49,7 @@ public class Student {
         student1.addGrade(93);
 
         System.out.println(student1.getGradeAverage());
+        System.out.println(student1.getGrade());
     }
 
 }
