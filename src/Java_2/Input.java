@@ -30,35 +30,73 @@ public class Input {
         return false;
     }
 
+
     public int getInt(int min, int max) {
-        int answer = this.getInt();
-        if (answer < min || answer > max){
+        int answer = 0;
+        try {
+            answer = Integer.valueOf(this.getString());
+        }catch (NumberFormatException e) {
             System.out.println("Number out of range, try again");
-            getInt(min, max);
-            input.nextInt();
-            return answer;
+            return getInt(min, max);
         }
+
+//        if (answer < min || answer > max){
+//            System.out.println("Number out of range, try again");
+//            getInt(min, max);
+//            input.nextInt();
+//            return answer;
+//        }
         System.out.println("Correct");
         return answer;
     }
 
     public int getInt(){
-        return input.nextInt();
+        try {
+            return Integer.valueOf(this.getString());
+        }catch (NumberFormatException e){
+            System.out.println("Please enter an integer");
+            return getInt();
+        }
     }
 
     public double getDouble(double min, double max){
-        double answer = this.getDouble();
-        if (answer < min || answer > max){
+        double answer = 0;
+        try {
+            answer = Double.valueOf(this.getString());
+        }catch (NumberFormatException e) {
             System.out.println("Number out of range, try again");
-            getDouble(min, max);
-            input.nextDouble();
-            return answer;
+            return getDouble(min, max);
         }
-        System.out.println("Correct");
+
+
+//        double answer = this.getDouble();
+//        if (answer < min || answer > max){
+//            System.out.println("Number out of range, try again");
+//            getDouble(min, max);
+//            input.nextDouble();
+//            return answer;
+//        }
+//        System.out.println("Correct");
         return answer;
     }
 
     public double getDouble(){
-        return input.nextDouble();
+        try {
+            return Double.valueOf(this.getString());
+        }catch (NumberFormatException e){
+            System.out.println("Please enter a double");
+            return getInt();
+        }
+    }
+
+    public static void main(String[] args) {
+        Input input = new Input();
+        System.out.println("Enter an integer");
+        int userInput = input.getInt();
+
+
+
     }
 }
+
+
